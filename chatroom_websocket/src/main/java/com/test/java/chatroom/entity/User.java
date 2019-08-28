@@ -1,6 +1,8 @@
 package com.test.java.chatroom.entity;
 
-
+/**
+ * 用户属性列表
+ * */
 import lombok.Data;
 
 @Data

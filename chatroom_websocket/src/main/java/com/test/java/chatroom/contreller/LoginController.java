@@ -1,5 +1,8 @@
 package com.test.java.chatroom.contreller;
-
+/**
+ * 前后端交互：
+ * 用户登录
+ * */
 
 import com.test.java.chatroom.config.FreeMarkerListener;
 import com.test.java.chatroom.service.AccountService;

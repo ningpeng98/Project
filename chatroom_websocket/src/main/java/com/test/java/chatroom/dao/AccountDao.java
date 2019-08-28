@@ -1,16 +1,15 @@
 package com.test.java.chatroom.dao;
-
+/**
+ * 用户模块的
+ * 1.用户登录 select
+ * 2.用户注册 insert
+ * */
 import com.test.java.chatroom.entity.User;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.sql.*;
 
-/**
- * 关于用户模块的Dao
- * 1.用户登录 select
- *
- * 2.用户注册 insert
- * */
+
 public class AccountDao extends BaseDao {
     //1.用户登录 select
     public User userLogin(String userName,String password){
@@ -26,6 +25,7 @@ public class AccountDao extends BaseDao {
             statement.setString(1,userName);
             //密码加密
             statement.setString(2,DigestUtils.md5Hex(password));
+            //获取结果集
             resultSet = statement.executeQuery();
             //如果resultSet不为空，将结果存入user
             if (resultSet.next()) {

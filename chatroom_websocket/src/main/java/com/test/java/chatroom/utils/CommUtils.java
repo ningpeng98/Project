@@ -1,5 +1,9 @@
 package com.test.java.chatroom.utils;
-
+/**
+ * 封装基础工具方法
+ * 1.如加载配置文件
+ * 2.json序列化
+ * */
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -7,7 +11,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-//封装基础工具方法，如加载配置文件，json序列化等
 public class CommUtils {
     //json使用
     private static final Gson gson = new GsonBuilder().create();
@@ -37,11 +40,14 @@ public class CommUtils {
 
             return gson.toJson(obj);
         }
+        //字符串转换成对象
         public static Object Json2Object(String jsonStr,Class objClass){
 
             return gson.fromJson(jsonStr,objClass);
         }
 
+
+        //判断提交的字符串是否为空
         public static boolean strIsNull(String str){
             return str == null || str.equals("");
         }

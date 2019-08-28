@@ -1,5 +1,8 @@
 package com.test.java.chatroom.contreller;
-
+/**
+ * 前后端交互：
+ * 用户注册
+ * */
 import com.test.java.chatroom.service.AccountService;
 
 import javax.servlet.ServletException;

@@ -1,4 +1,7 @@
 package com.test.java.chatroom.config;
+/**
+ * 配置页面
+ * */
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

@@ -1,5 +1,8 @@
 package com.test.java.chatroom.service;
-
+/**
+ * 业务实现：
+ * 用户注册及登录
+ * */
 import com.test.java.chatroom.dao.AccountDao;
 import com.test.java.chatroom.entity.User;
 

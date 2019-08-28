@@ -1,8 +1,10 @@
 package com.test.java.chatroom.entity;
-
+/**
+ * 前端发送给后端的信息实体类
+ * */
 
 import lombok.Data;
-//前端发送给后端的信息实体类
+
 @Data
 public class MessageFromClient {
     // 聊天信息

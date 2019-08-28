@@ -1,5 +1,9 @@
 package com.test.java.chatroom.service;
-
+/**
+ * 业务实现：
+ * 1.上线/下线及提示
+ * 2.群聊，私聊
+ * */
 
 import com.test.java.chatroom.entity.Message2Client;
 import com.test.java.chatroom.entity.MessageFromClient;
@@ -94,6 +98,16 @@ public class WebSocket {
         }
     }
 
+
+    //发送信息的方法
+    public void sendMsg(String msg) {
+        try {
+            this.session.getBasicRemote().sendText(msg);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @OnClose
     public void onClose() {
         // 将客户端聊天实体移除
@@ -113,11 +127,5 @@ public class WebSocket {
         }
     }
 
-    public void sendMsg(String msg) {
-        try {
-            this.session.getBasicRemote().sendText(msg);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 }

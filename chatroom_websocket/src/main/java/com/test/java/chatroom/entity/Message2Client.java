@@ -1,5 +1,7 @@
 package com.test.java.chatroom.entity;
-
+/**
+ * 后端发送给前端的信息实体类
+ * */
 import lombok.Data;
 
 import java.util.Map;

@@ -1,4 +1,11 @@
 package com.test.java.chatroom.dao;
+/**
+ *用户模块：
+ *封装基础操作：
+ * 1.获取数据源
+ * 2.获取连接
+ * 3.关闭资源
+ */
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 import com.test.java.chatroom.utils.CommUtils;
@@ -9,10 +16,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-
-/**
- *封装基础操作：获取数据源，获取连接，关闭资源
- */
 
 public class BaseDao {
     private static DataSource dataSource;
